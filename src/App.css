@@ -1,28 +1,278 @@
 .App {
   text-align: center;
+  font-family: 'Oswald', sans-serif;
+  background-color: lightgray;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.App-container {
+  background-color: #003F91;
+  width: 950px;
+  margin: 0 auto;
+  color: whitesmoke;
+  min-height: 100vh;
+  height: 100%;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
+#navBar {
+  display: flex;
+  width: 900px;
+  margin: 0 auto;
+  padding-top: 5em;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#navBar a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  color: black;
+  font-size: 14px;
+  text-decoration: none;
+  background-color: whitesmoke;
+  border-radius: 5px;
+  height: 5em;
+  margin: 2.5px;
+}
+
+#navBar a:hover {
+  background-color: rgba(221, 144, 81, 0.99);
+}
+
+.header {
+  position: fixed;
+  z-index: 1;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 0 8px 0;
+  padding: 8px 0;
+  background-color: white;
+  width: 100%;
+}
+
+#header-content {
+  width: 950px;
+  display: flex;
+  justify-content: space-between
+}
+
+.headerSpace {
+  width: 20%;
+}
+
+.headerSpace a:hover {
+  color: #7D8491;
+}
+
+.searchBar {
+  border-radius: 35px;
+}
+
+a {
+  color: black;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 14px;
+  margin: 0 5px;
+}
+
+#NavLinks {
+  display: flex;
+  align-items: center;
+}
+
+.NavLinks:active {
+  background-color: rgba(221, 144, 81, 0.99);
+  height: -5px;
+  margin-top: -5px;
+  margin-left: -1px;
+}
+
+.NavLink:focus {
+  background-color: rgba(221, 144, 81, 0.99);
+}
+
+.project-container {
+  margin: 0 auto;
+  width: 800px;
+}
+
+#project {
+  background-color: #BFD7EA;
+  text-align: left;
+  color: #2E4057;
+  padding: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+#project:hover {
+  background-color: rgb(209, 234, 255);
+}
+
+.blurb-team-contacts a {
+  color: white;
+}
+.contactSize {
+  font-size: 18px
+}
+
+.home-info {
+  width: 850px;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 70px;
+  font-size: 20px;
+}
+
+.home-contact a {
+  color: whitesmoke;
+}
+
+/* search bar */
+
+.container-1 {
+  width: 300px;
+  vertical-align: middle;
+  white-space: nowrap;
+  position: relative;
+}
+
+.container-1 input{
+  margin-right: 3px;
+}
+
+.container-1 input#search {
+  width: 300px;
+  height: 30px;
+  background: #003F91;
+  border: none;
+  font-size: 10pt;
+  float: left;
+  color: rgba(208, 223, 238, 0.71);
+  padding-left: 45px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-transition: background .55s ease;
+  -moz-transition: background .55s ease;
+  -ms-transition: background .55s ease;
+  -o-transition: background .55s ease;
+  transition: background .55s ease;
+}
+
+/* the color placeholder font in different brands */
+
+.container-1 input#search::-webkit-input-placeholder {
+  color: #D0DFEE;
+}
+
+.container-1 input#search:-moz-placeholder {
+  /* Firefox 18- */
+  color: #D0DFEE;
+}
+
+.container-1 input#search::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #D0DFEE;
+}
+
+.container-1 input#search:-ms-input-placeholder {
+  color: #D0DFEE;
+}
+
+/* hacky solution for the position */
+
+.container-1 .icon {
+  position: absolute;
+  top: 42%;
+  margin-left: -290px;
+  margin-top: -10px;
+  z-index: 1;
+  color: #CFE6FA;
+}
+
+.container-1 button {
+  margin-top: 0.5%;
+}
+
+/* transition color connects to container #search for animation */
+
+.container-1 input#search:hover,
+.container-1 input#search:focus,
+.container-1 input#search:active {
+  outline: none;
+  background: rgba(125, 132, 145, 0.74);
+  ;
+}
+
+.home-contact {
+  display: inline-flex;
+  border: white solid 1px;
+}
+
+.official-info {
+  padding: 0.5em;
+  border: white solid 1px;
+}
+
+.home-contact a {
   color: white;
 }
 
-.App-title {
-  font-size: 1.5em;
+.official-info a {
+  color: white;
 }
 
-.App-intro {
-  font-size: large;
+.blurb-team-contacts a {
+  color: white;
+  font-size: 16px;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.official-info a {
+  color: whitesmoke;
+  font-size: 16px;
+  text-transform: lowercase;
+}
+
+.official-info a:hover {
+  color: #7D8491;
+  text-transform: lowercase;
+}
+
+.home-contact {
+  display: inline-flex;
+  border: solid whitesmoke 1px;
+}
+
+.official-info {
+  border: solid whitesmoke 1px;
+}
+
+.officials-container {
+  display: flex;
+  justify-content: center;
+}
+
+.representatives-info {
+  border-bottom: 1px solid white
+}
+
+@media screen and (max-width: 950px) {
+  #navBar {
+    width: 700px;
+  }
+  
+  .App-container {
+    width: 750px;
+    min-height: 1366px;
+  }
+
+  .project-container {
+    width: 600px;
+  }
+
+  .home-info {
+    width: 650px;
+  }
 }
