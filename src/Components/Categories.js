@@ -1,12 +1,8 @@
 import React from 'react';
 import axios from 'axios';
 
-import dotenv from 'dotenv';
-
 import ProjectList from './ProjectList';
 import SelectList from './SelectList';
-
-const KEY = process.env.REACT_APP_API_KEY;
 
 class Categories extends React.Component {
   constructor(props) {
