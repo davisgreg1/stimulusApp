@@ -32,15 +32,17 @@ class SearchBar extends React.Component {
 
   render() {
     const { inputQuery, searchInput, redirect } = this.state;
-    const location = this.props.location.pathname
+    //const location = this.props.location.pathname
     if (redirect) {
       return (
         <div>
         <Redirect
-          to={{
+          to={
+            {
             pathname: `/search/${searchInput}`,
             state: { redirect: false }
-          }}
+          }
+        }
         />
         <div className="box">
             <div className="container-1">
