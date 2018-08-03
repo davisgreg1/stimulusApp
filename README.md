@@ -10,4 +10,4 @@ To use transpareNYC:
 2. If you would like to search by keyword:
     Use the search bar at the top of page to enter a keyword, and click the search button to see the results.
 
-[Image](./images/teamTransp.jpg?raw=true)
+![Image](./images/teamTransp.jpg?raw=true)
