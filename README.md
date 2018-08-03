@@ -9,3 +9,5 @@ To use transpareNYC:
     Then select an agency from the dropdown menu to see a list of projects they funded. 
 2. If you would like to search by keyword:
     Use the search bar at the top of page to enter a keyword, and click the search button to see the results.
+
+[Image](./images/teamTransp.jpg?raw=true)
